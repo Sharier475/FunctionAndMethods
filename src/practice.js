@@ -56,5 +56,8 @@
             Lowercase: lowerCaseCount
         };
     }
-    console.log(letterChecker("Sharier"));
+    const userInput = prompt("Enter a string: ");
+    console.log(letterChecker(userInput));
+
+
 }
