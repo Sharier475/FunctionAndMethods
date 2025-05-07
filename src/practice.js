@@ -38,5 +38,23 @@
 
 }
 
-
-
+// Letter Checker Count 
+{
+    const letterChecker = (str) => {
+        let upperCaseCount = 0;
+        let lowerCaseCount = 0;
+        for (const char of str) {
+            if (/[A-Z]/.test(char)) {
+                upperCaseCount++;
+            }
+            else if (/[a-z]/.test(char)) {
+                lowerCaseCount++;
+            }
+        }
+        return {
+            Uppercase: upperCaseCount,
+            Lowercase: lowerCaseCount
+        };
+    }
+    console.log(letterChecker("Sharier"));
+}
