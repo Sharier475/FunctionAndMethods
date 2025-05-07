@@ -50,14 +50,36 @@
             else if (/[a-z]/.test(char)) {
                 lowerCaseCount++;
             }
+            else {
+                console.log("Invalid Input");
+            }
         }
         return {
             Uppercase: upperCaseCount,
             Lowercase: lowerCaseCount
         };
     }
-    const userInput = prompt("Enter a string: ");
-    console.log(letterChecker(userInput));
+    // const userInput = prompt("Enter a string: ");
+    // console.log(letterChecker(userInput));
 
 
 }
+
+//Write a function fizzBuzz that logs numbers from 1 to 50. But for multiples of 3, log "Fizz", for multiples of 5 log "Buzz", and for multiples of both, log "FizzBuzz".
+
+{
+    const fizzBuzz = () => {
+        for (i = 1; i <= 50; i++) {
+            if (i % 15 === 0) console.log("FizzBuzz");
+            else if (i % 3 === 0) console.log("Fizz");
+            else if (i % 5 === 0) console.log("Buzz");
+            else console.log(i);
+        }
+    }
+
+    fizzBuzz();
+
+}
+
+
+
