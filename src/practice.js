@@ -1,40 +1,42 @@
-// function countVowels(str) {
+{
+    function countVowels(str) {
 
-//     let count = 0 
-//     for(const char of str){
-//         if (char === "a"||
-//             char === "e"||
-//             char === "i"||
-//             char === "o"||
-//             char === "u"
-//         )
-//         {count++;}
-//     }
-//     return count;
-// };
+        let count = 0
+        for (const char of str) {
+            if (char === "a" ||
+                char === "e" ||
+                char === "i" ||
+                char === "o" ||
+                char === "u"
+            ) { count++; }
+        }
+        return count;
+    };
 
-// console.log(countVowels("Sharier"));
+    console.log(countVowels("Sharier"));
+}
+
+
 
 //same solution using Arrow Function
-
-const countVowels = (str) => {
-    let count = 0;
-    for (const char of str) {
-        if (char === "a" ||
-            char === "e" ||
-            char === "i" ||
-            char === "o" ||
-            char === "u") 
-            { 
-            count++; 
+{
+    const countVowels = (str) => {
+        let count = 0;
+        for (const char of str) {
+            if (char === "a" ||
+                char === "e" ||
+                char === "i" ||
+                char === "o" ||
+                char === "u") {
+                count++;
             }
+        }
+        return count;
+
     }
-    return count;
+    console.log(countVowels("ILoveBangladesh"));
 
 }
-console.log(countVowels("ILoveBangladesh"));
-
-
 
 
 
